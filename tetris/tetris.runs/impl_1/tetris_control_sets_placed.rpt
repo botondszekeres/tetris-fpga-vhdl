@@ -1,0 +1,73 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Fri Mar 29 12:54:33 2019
+| Host         : DESKTOP-DSNARA2 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file tetris_control_sets_placed.rpt
+| Design       : tetris
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |     8 |
+| Unused register locations in slices containing registers |    40 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |            3 |
+|    16+ |            5 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             101 |           39 |
+| No           | No                    | Yes                    |               3 |            3 |
+| No           | Yes                   | No                     |             256 |          188 |
+| Yes          | No                    | No                     |             143 |           62 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             113 |           37 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+--------------------+--------------------+------------------+----------------+
+|  Clock Signal  |    Enable Signal   |  Set/Reset Signal  | Slice Load Count | Bel Load Count |
++----------------+--------------------+--------------------+------------------+----------------+
+|  rotb/Rotate   |                    | sell_i_1_n_0       |                1 |              1 |
+|  lb/Ldb        |                    | sell_i_1_n_0       |                1 |              1 |
+|  rb/Rdb        |                    | sell_i_1_n_0       |                1 |              1 |
+|  flag_BUFG     |                    |                    |               23 |             50 |
+|  clk_IBUF_BUFG |                    |                    |               16 |             52 |
+|  clk_IBUF_BUFG | ayy[0][31]_i_1_n_0 | axx[0][31]_i_1_n_0 |               37 |            113 |
+|  clk_IBUF_BUFG | ayy[0][31]_i_1_n_0 |                    |               62 |            143 |
+|  clk_IBUF_BUFG |                    | lose               |              188 |            256 |
++----------------+--------------------+--------------------+------------------+----------------+
+
+

@@ -1,0 +1,572 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Mar 29 12:46:41 2019
+# Process ID: 11076
+# Current directory: C:/Users/Bobossuno/tetris/tetris.runs/synth_1
+# Command line: vivado.exe -log tetris.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source tetris.tcl
+# Log file: C:/Users/Bobossuno/tetris/tetris.runs/synth_1/tetris.vds
+# Journal file: C:/Users/Bobossuno/tetris/tetris.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source tetris.tcl -notrace
+Command: synth_design -top tetris -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 2568 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 431.828 ; gain = 98.469
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'tetris' [C:/Users/Bobossuno/tetris/tetris.srcs/sources_1/new/tetris.vhd:41]
+INFO: [Synth 8-3491] module 'random' declared at 'C:/Users/Bobossuno/tetris/tetris.srcs/sources_1/new/random.vhd:4' bound to instance 'randgen' of component 'random' [C:/Users/Bobossuno/tetris/tetris.srcs/sources_1/new/tetris.vhd:158]
+INFO: [Synth 8-638] synthesizing module 'random' [C:/Users/Bobossuno/tetris/tetris.srcs/sources_1/new/random.vhd:9]
+WARNING: [Synth 8-6014] Unused sequential element tmp_reg was removed.  [C:/Users/Bobossuno/tetris/tetris.srcs/sources_1/new/random.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'random' (1#1) [C:/Users/Bobossuno/tetris/tetris.srcs/sources_1/new/random.vhd:9]
+WARNING: [Synth 8-614] signal 'ax' is read in the process but is not in the sensitivity list [C:/Users/Bobossuno/tetris/tetris.srcs/sources_1/new/tetris.vhd:160]
+WARNING: [Synth 8-614] signal 'bx' is read in the process but is not in the sensitivity list [C:/Users/Bobossuno/tetris/tetris.srcs/sources_1/new/tetris.vhd:160]
+WARNING: [Synth 8-614] signal 'ay' is read in the process but is not in the sensitivity list [C:/Users/Bobossuno/tetris/tetris.srcs/sources_1/new/tetris.vhd:160]
+WARNING: [Synth 8-614] signal 'by' is read in the process but is not in the sensitivity list [C:/Users/Bobossuno/tetris/tetris.srcs/sources_1/new/tetris.vhd:160]
+INFO: [Synth 8-638] synthesizing module 'db' [C:/Users/Bobossuno/tetris/tetris.srcs/sources_1/new/db.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'db' (2#1) [C:/Users/Bobossuno/tetris/tetris.srcs/sources_1/new/db.vhd:39]
+WARNING: [Synth 8-6014] Unused sequential element k_reg was removed.  [C:/Users/Bobossuno/tetris/tetris.srcs/sources_1/new/tetris.vhd:185]
+WARNING: [Synth 8-6014] Unused sequential element count1_reg was removed.  [C:/Users/Bobossuno/tetris/tetris.srcs/sources_1/new/tetris.vhd:187]
+WARNING: [Synth 8-6014] Unused sequential element bxx_reg[0] was removed.  [C:/Users/Bobossuno/tetris/tetris.srcs/sources_1/new/tetris.vhd:200]
+WARNING: [Synth 8-6014] Unused sequential element bxx_reg[1] was removed.  [C:/Users/Bobossuno/tetris/tetris.srcs/sources_1/new/tetris.vhd:200]
+WARNING: [Synth 8-6014] Unused sequential element bxx_reg[2] was removed.  [C:/Users/Bobossuno/tetris/tetris.srcs/sources_1/new/tetris.vhd:200]
+WARNING: [Synth 8-6014] Unused sequential element bxx_reg[3] was removed.  [C:/Users/Bobossuno/tetris/tetris.srcs/sources_1/new/tetris.vhd:200]
+WARNING: [Synth 8-6014] Unused sequential element byy_reg[0] was removed.  [C:/Users/Bobossuno/tetris/tetris.srcs/sources_1/new/tetris.vhd:201]
+WARNING: [Synth 8-6014] Unused sequential element byy_reg[1] was removed.  [C:/Users/Bobossuno/tetris/tetris.srcs/sources_1/new/tetris.vhd:201]
+WARNING: [Synth 8-6014] Unused sequential element byy_reg[2] was removed.  [C:/Users/Bobossuno/tetris/tetris.srcs/sources_1/new/tetris.vhd:201]
+WARNING: [Synth 8-6014] Unused sequential element byy_reg[3] was removed.  [C:/Users/Bobossuno/tetris/tetris.srcs/sources_1/new/tetris.vhd:201]
+WARNING: [Synth 8-6014] Unused sequential element px_reg was removed.  [C:/Users/Bobossuno/tetris/tetris.srcs/sources_1/new/tetris.vhd:204]
+WARNING: [Synth 8-6014] Unused sequential element py_reg was removed.  [C:/Users/Bobossuno/tetris/tetris.srcs/sources_1/new/tetris.vhd:205]
+WARNING: [Synth 8-6014] Unused sequential element sx_reg was removed.  [C:/Users/Bobossuno/tetris/tetris.srcs/sources_1/new/tetris.vhd:208]
+WARNING: [Synth 8-6014] Unused sequential element sy_reg was removed.  [C:/Users/Bobossuno/tetris/tetris.srcs/sources_1/new/tetris.vhd:209]
+WARNING: [Synth 8-6014] Unused sequential element free_reg was removed.  [C:/Users/Bobossuno/tetris/tetris.srcs/sources_1/new/tetris.vhd:214]
+WARNING: [Synth 8-6014] Unused sequential element ax_reg[0] was removed.  [C:/Users/Bobossuno/tetris/tetris.srcs/sources_1/new/tetris.vhd:165]
+WARNING: [Synth 8-6014] Unused sequential element ax_reg[1] was removed.  [C:/Users/Bobossuno/tetris/tetris.srcs/sources_1/new/tetris.vhd:165]
+WARNING: [Synth 8-6014] Unused sequential element ax_reg[2] was removed.  [C:/Users/Bobossuno/tetris/tetris.srcs/sources_1/new/tetris.vhd:165]
+WARNING: [Synth 8-6014] Unused sequential element ax_reg[3] was removed.  [C:/Users/Bobossuno/tetris/tetris.srcs/sources_1/new/tetris.vhd:165]
+WARNING: [Synth 8-6014] Unused sequential element ay_reg[0] was removed.  [C:/Users/Bobossuno/tetris/tetris.srcs/sources_1/new/tetris.vhd:167]
+WARNING: [Synth 8-6014] Unused sequential element ay_reg[1] was removed.  [C:/Users/Bobossuno/tetris/tetris.srcs/sources_1/new/tetris.vhd:167]
+WARNING: [Synth 8-6014] Unused sequential element ay_reg[2] was removed.  [C:/Users/Bobossuno/tetris/tetris.srcs/sources_1/new/tetris.vhd:167]
+WARNING: [Synth 8-6014] Unused sequential element ay_reg[3] was removed.  [C:/Users/Bobossuno/tetris/tetris.srcs/sources_1/new/tetris.vhd:167]
+WARNING: [Synth 8-6014] Unused sequential element bx_reg[0] was removed.  [C:/Users/Bobossuno/tetris/tetris.srcs/sources_1/new/tetris.vhd:166]
+WARNING: [Synth 8-6014] Unused sequential element bx_reg[1] was removed.  [C:/Users/Bobossuno/tetris/tetris.srcs/sources_1/new/tetris.vhd:166]
+WARNING: [Synth 8-6014] Unused sequential element bx_reg[2] was removed.  [C:/Users/Bobossuno/tetris/tetris.srcs/sources_1/new/tetris.vhd:166]
+WARNING: [Synth 8-6014] Unused sequential element bx_reg[3] was removed.  [C:/Users/Bobossuno/tetris/tetris.srcs/sources_1/new/tetris.vhd:166]
+WARNING: [Synth 8-6014] Unused sequential element by_reg[0] was removed.  [C:/Users/Bobossuno/tetris/tetris.srcs/sources_1/new/tetris.vhd:168]
+WARNING: [Synth 8-6014] Unused sequential element by_reg[1] was removed.  [C:/Users/Bobossuno/tetris/tetris.srcs/sources_1/new/tetris.vhd:168]
+WARNING: [Synth 8-6014] Unused sequential element by_reg[2] was removed.  [C:/Users/Bobossuno/tetris/tetris.srcs/sources_1/new/tetris.vhd:168]
+WARNING: [Synth 8-6014] Unused sequential element by_reg[3] was removed.  [C:/Users/Bobossuno/tetris/tetris.srcs/sources_1/new/tetris.vhd:168]
+WARNING: [Synth 8-6014] Unused sequential element r_reg was removed.  [C:/Users/Bobossuno/tetris/tetris.srcs/sources_1/new/tetris.vhd:349]
+INFO: [Synth 8-256] done synthesizing module 'tetris' (3#1) [C:/Users/Bobossuno/tetris/tetris.srcs/sources_1/new/tetris.vhd:41]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 726.586 ; gain = 393.227
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 726.586 ; gain = 393.227
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 726.586 ; gain = 393.227
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Bobossuno/tetris/tetris.srcs/constrs_1/new/constraints.xdc]
+Finished Parsing XDC File [C:/Users/Bobossuno/tetris/tetris.srcs/constrs_1/new/constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Bobossuno/tetris/tetris.srcs/constrs_1/new/constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/tetris_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/tetris_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1049.973 ; gain = 0.051
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1050.250 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1050.250 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1050.250 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1050.250 ; gain = 716.891
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1050.250 ; gain = 716.891
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1050.250 ; gain = 716.891
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "r" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[4]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[4]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[4]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[4]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[4]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[4]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[4]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[4]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[4]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[4]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[4]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[4]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[4]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[4]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[5]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[5]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[5]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[5]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[5]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[5]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[5]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[5]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[5]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[5]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[5]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[5]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[5]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[5]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "STORED_reg[7]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Common 17-14] Message 'Synth 8-5545' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-5544] ROM "k" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "shapes[0][3]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "shapes[0][2]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "shapes[0][1]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "shapes[0][0]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "axx[0]1" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "axx[1]1" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "axx[2]1" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "axx[3]1" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "count1" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "count1" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "count1" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "count1" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "count1" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "count1" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "count1" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "count1" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "count1" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "count1" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "count1" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "count1" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "count1" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "count1" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:47 ; elapsed = 00:00:49 . Memory (MB): peak = 1050.250 ; gain = 716.891
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |tetris__GB0   |           1|     56672|
+|2     |tetris__GB1   |           1|      6807|
+|3     |tetris__GB2   |           1|     17423|
+|4     |tetris__GB3   |           1|     18580|
+|5     |tetris__GB4   |           1|     31688|
+|6     |tetris__GB5   |           1|     17013|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   7 Input     32 Bit       Adders := 14    
+	   3 Input     32 Bit       Adders := 9     
+	   4 Input     32 Bit       Adders := 5     
+	   2 Input     32 Bit       Adders := 26    
+	   2 Input     31 Bit       Adders := 4     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 18    
++---XORs : 
+	   4 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 8     
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 34    
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 14    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 201   
+	   7 Input     32 Bit        Muxes := 4     
+	   2 Input     31 Bit        Muxes := 4     
+	   2 Input      8 Bit        Muxes := 1600  
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 14    
+	   2 Input      3 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 197   
+	   7 Input      1 Bit        Muxes := 5     
+	  14 Input      1 Bit        Muxes := 3     
+	  13 Input      1 Bit        Muxes := 2     
+	  12 Input      1 Bit        Muxes := 2     
+	  11 Input      1 Bit        Muxes := 2     
+	  10 Input      1 Bit        Muxes := 2     
+	   9 Input      1 Bit        Muxes := 2     
+	   6 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 10    
+	   3 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module tetris 
+Detailed RTL Component Info : 
++---Adders : 
+	   7 Input     32 Bit       Adders := 14    
+	   3 Input     32 Bit       Adders := 9     
+	   4 Input     32 Bit       Adders := 5     
+	   2 Input     32 Bit       Adders := 26    
+	   2 Input     31 Bit       Adders := 4     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 18    
++---Registers : 
+	               32 Bit    Registers := 8     
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 33    
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 201   
+	   7 Input     32 Bit        Muxes := 4     
+	   2 Input     31 Bit        Muxes := 4     
+	   2 Input      8 Bit        Muxes := 1600  
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 14    
+	   2 Input      3 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 197   
+	   7 Input      1 Bit        Muxes := 5     
+	  14 Input      1 Bit        Muxes := 3     
+	  13 Input      1 Bit        Muxes := 2     
+	  12 Input      1 Bit        Muxes := 2     
+	  11 Input      1 Bit        Muxes := 2     
+	  10 Input      1 Bit        Muxes := 2     
+	   9 Input      1 Bit        Muxes := 2     
+	   6 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 10    
+	   3 Input      1 Bit        Muxes := 1     
+Module db__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
+Module db__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
+Module db 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
+Module random 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input      1 Bit         XORs := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 2 processes.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:18 ; elapsed = 00:01:41 . Memory (MB): peak = 1050.250 ; gain = 716.891
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |tetris__GB0   |           1|     12642|
+|2     |tetris__GB1   |           1|      2173|
+|3     |tetris__GB2   |           1|      3410|
+|4     |tetris__GB3   |           1|      7743|
+|5     |tetris__GB4   |           1|      4818|
+|6     |tetris__GB5   |           1|      2573|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:24 ; elapsed = 00:01:47 . Memory (MB): peak = 1050.250 ; gain = 716.891
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:05:23 ; elapsed = 00:05:48 . Memory (MB): peak = 1756.520 ; gain = 1423.160
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |tetris__GB5   |           1|      2274|
+|2     |tetris_GT0    |           1|     26002|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:05:28 ; elapsed = 00:06:09 . Memory (MB): peak = 1756.520 ; gain = 1423.160
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |tetris__GB5   |           1|       934|
+|2     |tetris_GT0    |           1|      8854|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:05:32 ; elapsed = 00:06:14 . Memory (MB): peak = 1756.520 ; gain = 1423.160
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:05:32 ; elapsed = 00:06:14 . Memory (MB): peak = 1756.520 ; gain = 1423.160
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:05:33 ; elapsed = 00:06:15 . Memory (MB): peak = 1756.520 ; gain = 1423.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:05:33 ; elapsed = 00:06:15 . Memory (MB): peak = 1756.520 ; gain = 1423.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:05:33 ; elapsed = 00:06:15 . Memory (MB): peak = 1756.520 ; gain = 1423.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:05:33 ; elapsed = 00:06:15 . Memory (MB): peak = 1756.520 ; gain = 1423.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+-------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name          | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+-------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|tetris      | randgen/Qt_reg[4] | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++------------+-------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |   333|
+|3     |LUT1   |   429|
+|4     |LUT2   |  1084|
+|5     |LUT3   |   956|
+|6     |LUT4   |  1025|
+|7     |LUT5   |  1103|
+|8     |LUT6   |  4172|
+|9     |MUXF7  |    52|
+|10    |MUXF8  |    15|
+|11    |SRL16E |     1|
+|12    |FDCE   |     3|
+|13    |FDRE   |   579|
+|14    |FDSE   |    18|
+|15    |IBUF   |     4|
+|16    |OBUF   |    24|
++------+-------+------+
+
+Report Instance Areas: 
++------+----------+-------+------+
+|      |Instance  |Module |Cells |
++------+----------+-------+------+
+|1     |top       |       |  9800|
+|2     |  lb      |db     |     4|
+|3     |  randgen |random |   462|
+|4     |  rb      |db_0   |     4|
+|5     |  rotb    |db_1   |     4|
++------+----------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:05:33 ; elapsed = 00:06:15 . Memory (MB): peak = 1756.520 ; gain = 1423.160
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:05:13 ; elapsed = 00:06:07 . Memory (MB): peak = 1756.520 ; gain = 1099.496
+Synthesis Optimization Complete : Time (s): cpu = 00:05:33 ; elapsed = 00:06:15 . Memory (MB): peak = 1756.520 ; gain = 1423.160
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 400 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'tetris' is not ideal for floorplanning, since the cellview 'tetris' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1756.520 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+144 Infos, 38 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:05:36 ; elapsed = 00:06:18 . Memory (MB): peak = 1756.520 ; gain = 1436.035
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1756.520 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Bobossuno/tetris/tetris.runs/synth_1/tetris.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file tetris_utilization_synth.rpt -pb tetris_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Mar 29 12:53:03 2019...
